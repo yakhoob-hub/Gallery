@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gallery">
+        <img src="https://picsum.photos/200/300" alt="Image 1" onclick="openModal(this)">
+        <img src="https://picsum.photos/200/300" alt="Image 2" onclick="openModal(this)">
+        <img src="https://picsum.photos/200/300" alt="Image 3" onclick="openModal(this)">
+        <img src="https://picsum.photos/200/300" alt="Image 4" onclick="openModal(this)">
+    </div>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">×</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
